@@ -1,0 +1,18 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: OnlineBookLibrary
+  datasource:
+    url: jdbc:mysql://localhost:3306/onlinebooklibrary
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+logging:
+  level:
+    root: info
